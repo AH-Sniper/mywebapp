@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="css/H5.css">
+	<!-- 主要样式及逻辑 -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- loading -->
+	<link rel="stylesheet" href="css/loading.css">
+</head>
+<body>
+
+	<div class="loading">
+		<div class="bounce-1"></div>
+		<div class="bounce-2"></div>
+
+		<!-- <div id="rate">0%</div> -->
+	</div>
+	
+
+	<!-- 载入所有的组件资源 -->
+	<script src="./js/lib/jquery.js"></script>
+	<script src="./js/lib/jquery.fullPage.js"></script>
+
+	<!-- 加载 H5 内容管理 -->
+	<script src="js/H5.js"></script>
+
+	<!-- 加载 H5 相关资源 -->
+	<script>
+		var resource = ['Base','Bar','Bar_v','Point','Polyline','Radar','Pie','Ring'];
+		var html = [];
+		for (var s in resource){
+			html.push('<script src="./js/H5Component'+resource[s]+'.js"><\/script>');
+			html.push('<link rel="stylesheet" href="css/H5Component'+resource[s]+'.css">');
+		}
+		document.write(html.join(''));
+	</script>
+
+
+	<script src="js/index.js"></script>
+
+</body>
+</html>

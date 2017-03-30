@@ -1,0 +1,27 @@
+/* 散点图组件样式 */
+
+.h5_component_point {
+	transition: all .5s;
+}
+
+.h5_component_point_load {
+	opacity: 1;
+}
+
+.h5_component_point_leave {
+	opacity: 0;
+}
+
+.h5_component_point .point {
+	position: absolute;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.h5_component_point .point.active {
+	animation: kuosan 1.8s infinite 1.8s;
+}
+
+@keyframes kuosan {
+	50% { transform: scale(1.1); opacity: .8; }
+}

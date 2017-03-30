@@ -1,0 +1,19 @@
+/* 基本图文组件对象 */
+
+.h5_component {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.h5_component_base {
+	transition: all .5s;
+}
+
+.h5_component_base_load {
+	opacity: 1 !important;
+}
+
+.h5_component_base_leave {
+	opacity: 0 !important;
+}
